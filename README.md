@@ -34,13 +34,7 @@ This project is an AI-powered **Email Security Agent** designed to intelligently
 4. **User Notification**
    - Send a notification email to the user with:
      - Sender, subject, snippet
-     - "✅ Allow" and "❌ Deny" action buttons
 
-5. **User Review Action**
-   - User clicks `Allow` or `Deny`
-   - Backend processes request:
-     - `Allow`: Moves email back to Inbox
-     - `Deny`: Deletes or leaves email quarantined
 
 6. **Cloud Logging**
    - Upload detection logs as NDJSON to S3 for future audits and analytics.
