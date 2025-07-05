@@ -1,0 +1,36 @@
+[
+  {
+    "timestamp": "2025-07-05T22:33:43.372101",
+    "signals": {
+      "intent": "phishing",
+      "emotional_tone": "urgent",
+      "suspicious_elements": {
+        "spoofed_domains": [
+          "http://fake-apple-login.security-check.com"
+        ],
+        "unusual_links": [
+          "http://fake-apple-login.security-check.com"
+        ],
+        "attachments": []
+      },
+      "requested_actions": {
+        "payments": [],
+        "credentials": [
+          "verify your information"
+        ],
+        "clicks": [
+          "clicking the secure link below"
+        ]
+      },
+      "anomalies": {
+        "linguistic_errors": [],
+        "mismatched_sender_info": [
+          "Email claims to be from Apple but is sent from a personal Gmail account"
+        ]
+      }
+    },
+    "subject": "Your Apple ID has been locked",
+    "from": "Sai Prakash Jallu <saiprakashjallu@gmail.com>",
+    "body_snippet": "Dear Customer,\r\n\r\nWe detected suspicious activity in your Apple account. For your protection,\r\nyour Apple ID has been temporarily locked.\r\n\r\nTo unlock your account, please verify your information imme"
+  }
+]
