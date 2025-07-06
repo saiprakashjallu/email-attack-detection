@@ -60,3 +60,36 @@ This project is an AI-powered **Email Security Agent** designed to intelligently
           ┌───────────────────────────────┐      │        ▼
           │ Quarantine Notification Email │──────┘   Allow / Deny
           └───────────────────────────────┘           Endpoints
+
+
+
+
+
+
+**🛠️ Setup
+Install dependencies
+pip install -r requirements.txt
+Set up Gmail IMAP access
+Enable IMAP in Gmail settings
+Create an App Password
+Configure AWS CLI
+aws configure
+Run the handler
+python handling.py
+
+
+📂 Folder Structure
+LLM-Agents/
+├── agent.py                 # Core logic for email parsing and LLM analysis
+├── handling.py              # Main entry script to process emails
+├── notify.py                # Email notification handler
+├── quarantine_api.py        # Flask API to handle Allow/Deny actions
+├── logs/                    # Local log staging (optional)
+├── requirements.txt
+└── README.md
+🧠 Future Enhancements
+✅ UI dashboard for users to manage quarantined emails
+✅ Athena integration for querying logs
+✅ Daily summary digest of quarantined emails
+✅ Feedback-based reinforcement learning
+**
