@@ -13,7 +13,7 @@ This project is an AI-powered **Email Security Agent** designed to intelligently
 
 ---
 
-## 🔁 Workflow
+##  Workflow
 
 1. **Email Intake**
    - Connect to Gmail inbox via IMAP.
@@ -41,7 +41,7 @@ This project is an AI-powered **Email Security Agent** designed to intelligently
   
 
 
-**🛠️ Setup
+** Setup
 -  Install dependencies
 -  pip install -r requirements.txt
 -  Set up Gmail IMAP access
@@ -54,7 +54,7 @@ This project is an AI-powered **Email Security Agent** designed to intelligently
 
 
 
-📂 Folder Structure
+ Folder Structure
 LLM-Agents/
 -  ├── agent.py                 # Core logic for email parsing and LLM analysis
 -  ├── handling.py              # Main entry script to process emails
@@ -74,7 +74,7 @@ LLM-Agents/
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```plaintext
 ┌────────────┐        ┌────────────────┐       ┌──────────────────────┐
