@@ -56,13 +56,13 @@ This project is an AI-powered **Email Security Agent** designed to intelligently
 
 📂 Folder Structure
 LLM-Agents/
-├── agent.py                 # Core logic for email parsing and LLM analysis
-├── handling.py              # Main entry script to process emails
-├── notify.py                # Email notification handler
-├── quarantine_api.py        # Flask API to handle Allow/Deny actions
-├── logs/                    # Local log staging (optional)
-├── requirements.txt
-└── README.md
+-  ├── agent.py                 # Core logic for email parsing and LLM analysis
+-  ├── handling.py              # Main entry script to process emails
+-  ├── notify.py                # Email notification handler
+-  ├── quarantine_api.py        # Flask API to handle Allow/Deny actions
+-  ├── logs/                    # Local log staging (optional)
+-  ├── requirements.txt
+-  └── README.md
 🧠 Future Enhancements
 ✅ UI dashboard for users to manage quarantined emails
 ✅ Athena integration for querying logs
