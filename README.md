@@ -42,15 +42,16 @@ This project is an AI-powered **Email Security Agent** designed to intelligently
 
 
 **🛠️ Setup
-Install dependencies
-pip install -r requirements.txt
-Set up Gmail IMAP access
-Enable IMAP in Gmail settings
-Create an App Password
-Configure AWS CLI
-aws configure
-Run the handler
-python handling.py
+-  Install dependencies
+-  pip install -r requirements.txt
+-  Set up Gmail IMAP access
+-  Enable IMAP in Gmail settings
+-  Create an App Password
+-  Configure AWS CLI
+-  aws configure
+-  Run the handler
+-  python handling.py
+
 
 
 📂 Folder Structure
