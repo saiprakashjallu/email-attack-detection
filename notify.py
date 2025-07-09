@@ -11,10 +11,10 @@ def handle_suspicious_email(mail, email_id, signals, parsed_email):
         notify_user('saiprakashjallu@gmail.com', signals, parsed_email)
 
 if __name__ == "__main__":
-    agent = EmailSecurityAgent(api_key="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")
+    agent = EmailSecurityAgent(api_key="API_KEY")
 
     mail = imaplib.IMAP4_SSL('imap.gmail.com')
-    mail.login('mail.24gateway@gmail.com', 'nriy eydm ugsq ccpb')
+    mail.login('Your Mail ID', 'App Password')
     mail.select('inbox')
 
     _, data = mail.search(None, 'UNSEEN')
