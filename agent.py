@@ -79,10 +79,10 @@ class EmailSecurityAgent:
 def notify_user(receiver_email, signals, email_details):
     smtp_server = "smtp.gmail.com"
     smtp_port = 587
-    sender_email = "mail.24gateway@gmail.com"
-    sender_password = "nriy eydm ugsq ccpb"
+    sender_email = "You Mail ID"
+    sender_password = "App Password"
 
-    subject = f"🚨 Suspicious Email Detected: {email_details['subject']}"
+    subject = f"Suspicious Email Detected: {email_details['subject']}"
     body = f"""
     Suspicious email detected.
 
@@ -111,9 +111,9 @@ def notify_user(receiver_email, signals, email_details):
 def notify_security_team(signals, parsed_email):
     smtp_server = 'smtp.yourdomain.com'
     smtp_port = 587
-    sender_email = 'mail.24gateway@gmail.com'
-    sender_password = 'nriy eydm ugsq ccpb'
-    receiver_email = 'saiprakashjallu@gmail.com'
+    sender_email = "You Mail ID"
+    sender_password = "App Password"
+    receiver_email = 'Receiver Mail ID'
 
     subject = f"⚠️ Phishing Alert: {parsed_email['subject']}"
     body = f"""
@@ -159,7 +159,7 @@ def handle_suspicious_email(mail, email_id, signals, parsed_email):
             print(f"❌ Error moving email: {e}")
 
         try:
-            notify_user('saiprakashjallu@gmail.com', signals, parsed_email)
+            notify_user('Receiver Mail ID', signals, parsed_email)
             # Or use notify_security_team(signals, parsed_email) if you prefer
         except Exception as e:
             print(f"❌ Notification failed: {e}")
@@ -170,10 +170,10 @@ def handle_suspicious_email(mail, email_id, signals, parsed_email):
 
 
 if __name__ == "__main__":
-    agent = EmailSecurityAgent(api_key="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")
+    agent = EmailSecurityAgent(api_key="API_KEY HERE")
 
     mail = imaplib.IMAP4_SSL('imap.gmail.com')
-    mail.login('mail.24gateway@gmail.com', 'nriy eydm ugsq ccpb')
+    mail.login('Your Mail ID', 'Your APP Password')
     mail.select('inbox')
 
     _, data = mail.search(None, 'UNSEEN')
