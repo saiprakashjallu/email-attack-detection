@@ -2,7 +2,7 @@ import imaplib
 import email
 
 mail = imaplib.IMAP4_SSL('imap.gmail.com')
-mail.login('mail.24gateway@gmail.com', 'nriy eydm ugsq ccpb')
+mail.login('You Mail ID', 'APP Password')
 mail.select('inbox')
 
 _, data = mail.search(None, 'UNSEEN')
